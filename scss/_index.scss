@@ -1,4 +1,14 @@
 // css para index
+@font-face {
+    font-family: SUNN-line-regular;
+    src: url('../assets/fonts/menu/SUNN-Line-Regular.woff');
+}
+
+@font-face {
+    font-family: Brush-regular;
+    src: url('../assets/fonts/footer/CrushineBrushScript.woff');
+}
+
 .cupcake {
     width: 100%;
 }
@@ -7,4 +17,15 @@
     height: 38rem;
     background-size: cover;
     background-position: center center;
+}
+
+// texto para el Coming Soon
+.comingSoon {
+    font-family: SUNN-line-regular;
+    font-size: 120px;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    padding-top: 15%;
+    padding-left: 40%;
 }
