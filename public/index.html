@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta name description -->
+    <meta name="description" content="">
+    <!-- Meta name keywords -->
+    <meta name="keywords" content="cookies, galletitas, tortas, funbox, pasteleria, cupcakes, muffins">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/img/logosweet.svg">
+    <!-- Link a Bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- Link a archivo CSS Animation  -->
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <!-- Link a efectos AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Link a archivo CSS -->
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <!-- Font Awesome JS -->
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Sweet Design</title>
+</head>
+
+<body>
+    <!-- inicio Header Contenedor barra nav + logo -->
+    <header class="container-fluid stickyNav">
+        <div class="row no-gutters">
+            <div class="col-lg-12 col-xs-12 col-md-12 d-flex justify-content-center contenedor-logo">
+                <a href="index.html"><img src="assets/img/logosweet.svg" alt="logo ijac" class="navbar__logo"> </a>
+            </div>
+            <div class="colNavBar col-lg-12 col-xs-12 col-md-12">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light barraNav navbar-dark">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                        <ul class="navbar-nav fuenteNav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">INICIO <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#linkProductosSpan">PRODUCTOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#linkSomosSpan">¿QUIÉNES SOMOS?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#linkContactoSpan">CONTACTO</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Fin header contenedor barra + logo -->
+    <!-- Inicio contenedor principal -->
+    <div>
+        <!-- Inicio carousel -->
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active sonic">
+                </div>
+                <div class="carousel-item ponies">
+                </div>
+                <div class="carousel-item minions">
+                </div>
+                <div class="carousel-item cookies">
+                </div>
+                <div class="carousel-item cupcakes">
+                </div>
+                <div class="carousel-item cookiesNavidad">
+                </div>
+            </div>
+        </div>
+        <!-- Fin carousel -->
+        <!-- Inicio contenedor principal -->
+        <!-- Inicio Link got to Gallery -->
+        <div id="linkProductos">
+            <span id="linkProductosSpan"></span>
+        </div>
+        <!-- Fin Link go to Gallery -->
+        <!-- Inicio productos -->
+        <section class="page-section" id="services">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Productos</h2>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-3">
+                        <span>
+                    <img src="./assets/img/torta_arcoIris.png" class="productsPhotoStyle" alt="img">
+                    </span>
+                        <h4 class="my-3">Tortas</h4>
+                        <p class="text-muted">A las tortas temáticas las pensamos juntos. Pueden ser cubierta con Fondant o Buttercream. Elegí tu temática preferida</p>
+                        <a href="#linkGaleriaSpan"> <button onclick="renderizarTortas()" class="btnProductos">
+                        <span>
+                            Ver Más
+                        </span>
+                    </button></a>
+                    </div>
+                    <div class="col-md-3">
+                        <span>
+                        <img src="./assets/img/cookieDino.png" class="productsPhotoStyle" alt="img">
+                        </span>
+                        <h4 class="my-3">Cookies</h4>
+                        <p class="text-muted">Realizadas con masa sablée sabor vainilla o chocolate. Pueden ser decoradas con glasé, fondant o una combinación de ambas.</p>
+                        <a href="#linkGaleriaSpan"><button onclick="renderizarCookies()" class="btnProductos">
+                        <span>
+                            Ver Más
+                        </span>
+                    </button></a>
+                    </div>
+                    <div class="col-md-3">
+                        <span>
+                        <img src="./assets/img//funBox.png" class="productsPhotoStyle" alt="img">
+                        </span>
+                        <h4 class="my-3">Funbox</h4>
+                        <p class="text-muted">La caja viene con cookies y mangas de glasé listas para usar. Podés elegir la temática y disfrutar de una actividad super divertida.</p>
+                        <a href="#linkGaleriaSpan"> <button onclick="renderizarFunbox()" class="btnProductos">
+                        <span>
+                            Ver Más
+                        </span>
+                    </button></a>
+                    </div>
+                    <div class="col-md-3">
+                        <span>
+                        <img src="./assets/img/cupcakes1.png" class="productsPhotoStyle" alt="img">
+                        </span>
+                        <h4 class="my-3">Cupcakes</h4>
+                        <p class="text-muted">Podés elegir entre diferentes sabores y rellenos. La deco puede ser personalizada de acuerdo a la temática que elijas.</p>
+                        <a href="#linkGaleriaSpan"><button onclick="renderizarCupcakes()" class="btnProductos">
+                        <span>
+                            Ver Más
+                        </span>
+                    </button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fin Productos -->
+        <!-- Inicio galería fotos -->
+        <!-- Inicio Link got to Gallery -->
+        <div id="linkGaleria">
+            <span id="linkGaleriaSpan"></span>
+        </div>
+        <!-- Fin Link go to Gallery -->
+        <div id="galeriaProductos">
+            <!-- Aquí va la renderización de productos -->
+        </div>
+        <div class="popup-image">
+            <span>&times;</span>
+            <img src="./assets/img/TortaBautismo.png" alt="torta">
+        </div>
+        <!-- Fin Galería fotos -->
+        <!-- Inicio Quienes Somos -->
+        <!-- Inicio Link go to Somos -->
+        <div id="linkSomos">
+            <span id="linkSomosSpan"></span>
+        </div>
+        <!-- Fin Link go to Somos -->
+        <div id="divQuienesSomos">
+            <div class="col-lg-12 col-xs-12 col-md-12 d-flex justify-content-center ">
+                <img src="./assets/img/final perfil.png" alt="sofiCeria" class="quienesSomos">
+            </div>
+            <div class="col-lg-12 col-xs-12 col-md-12 d-flex justify-content-center">
+                <p class="quienesSomosDescription">¡Hola! Soy Sofi Ceria: publicista, organizadora de eventos y pastelera profesional egresada del IAG. Desde muy chica, cocinaba con mi abuela Memé; sentada en el mármol con un repasador en la cola. Desde alfajores, rogel hasta masitas con
+                    dulce. Trabajé en eventos hasta el año 2012 y apareció la oportunidad de empezar a cocinar desde casa todas las recetas que la abuela me enseñó. En 2015, me perfeccioné en Pastelería con el fin de lograr la calidad y presentación de
+                    mis productos. Me dedico a realizar tortas decoradas y cookies personalizadas. Mi objetivo es colmar tus expectativas y que seas feliz.</p>
+            </div>
+
+        </div>
+        <!-- Fin Quienes Somos -->
+        <!-- inicio formulario contacto -->
+        <!-- Inicio Link go to Contacto -->
+        <div id="linkContacto">
+            <span id="linkContactoSpan"></span>
+        </div>
+        <!-- Fin Link go to Contacto -->
+        <div id="divForm" class="contact1">
+            <div class="container-contact1">
+                <div class="contact1-pic js-tilt" data-tilt>
+                    <img src="./assets/img/cupcakeSvg.svg" alt="cupcake" class="cupcakeSvg">
+                </div>
+
+                <form id="formulario" class="contact1-form validate-form">
+                    <span class="contact1-form-title contact1--titulo">
+                    ¡Hacé tu consulta!
+                </span>
+
+                    <div id="divCampoNombre" class="wrap-input1 validate-input" data-validate="Name is required">
+                        <input id="txtNombre" class="input1" type="text" name="name" placeholder="Nombre">
+                        <span class="shadow-input1"></span>
+                    </div>
+
+                    <div id="divCampoEmail" class="wrap-input1 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                        <input id="txtEmail" class="input1" type="email" name="email" placeholder="Email">
+                        <span class="shadow-input1"></span>
+                    </div>
+
+                    <div id="divCampoAsunto" class="wrap-input1 validate-input" data-validate="Subject is required">
+                        <input id="txtAsunto" class="input1" type="text" name="subject" placeholder="Asunto">
+                        <span class="shadow-input1"></span>
+                    </div>
+
+                    <div id="divCampoMensaje" class="wrap-input1 validate-input" data-validate="Message is required">
+                        <textarea id="txtMensaje" class="input1" name="message" placeholder="Mensaje"></textarea>
+                        <span class="shadow-input1"></span>
+                    </div>
+
+                    <div class="container-contact1-form-btn">
+                        <button id="btnEnviar" type="submit" class="contact1-form-btn">
+                        <span>
+                            Enviar
+                        </span>
+                    </button>
+                    </div>
+                </form>
+                <article id="content">
+                    <br>
+                    <!-- Aqui mensaje en respuesta a los eventos -->
+                </article>
+            </div>
+        </div>
+        <!-- fin formulario contacto -->
+    </div>
+    <!-- Fin de contenedor principal -->
+    <!-- Inicio footer -->
+    <footer id="footer" class="bg-primary text-white d-flex-column text-center">
+        <hr class="mt-0">
+        <!-- inicio Botones de redes sociales -->
+        <div class="text-center">
+            <h4 class="text-center texcenter--h4">Podés seguirme en</h4>
+            <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                    <a href="https://www.facebook.com/SweetDesign.com.ar" target="_blank"><img src="./assets/img/facebook.svg" class="socialNetworkLink" alt="facebook"></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.linkedin.com/in/sofia-ceria-085a70219/" target="_blank"><img src="./assets/img/linkedin.svg" class="socialNetworkLink" alt="linkedin"></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.instagram.com/sweetdesignpasteleria/" target="_blank"><img src="./assets/img/instagram.svg" class="socialNetworkLink" alt="instagram"></a>
+                </li>
+            </ul>
+        </div>
+        <!-- Fin botones de redes sociales -->
+        <!--Copyright-->
+        <div class="py-3 text-center copyright">
+            Copyright 2012 - 2022<br>
+            <a class="ijac" href="https://ijac.com.ar" target="_blank">iJac IT Solutions </a>
+        </div>
+        <!--/.Copyright-->
+    </footer>
+    <!-- Fin footer -->
+    <!-- Script Jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+    </script>
+    <script src="./js/productos.js"></script>
+    <script src="./js/contactoScript.js"></script>
+
+</body>
+
+</html>

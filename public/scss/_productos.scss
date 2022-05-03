@@ -1,0 +1,265 @@
+@font-face {
+    font-family: SUNN-line-regular;
+    src: url('../assets/fonts/menu/SUNN-Line-Regular.woff');
+}
+
+@font-face {
+    font-family: Brush-regular;
+    src: url('../assets/fonts/footer/CrushineBrushScript.woff');
+}
+
+#services {
+    margin-bottom: 5%;
+}
+
+.text-uppercase {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-family: SUNN-line-regular;
+    font-size: 60px;
+    color: black;
+    font-weight: bold;
+}
+
+.text-muted {
+    font-family: SUNN-line-regular;
+    font-size: 25px;
+    color: black;
+    font-weight: normal;
+    padding-bottom: 10%;
+    text-align: center;
+}
+
+.my-3 {
+    font-family: SUNN-line-regular;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+}
+
+.text-primary {
+    background-image: url("../assets/img/cookieDino.png");
+}
+
+// Botón ver más fotos
+.btnProductos {
+    min-width: 130px;
+    height: 40px;
+    border-radius: 25px;
+    background: #DC666B;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    font-family: SUNN-line-regular;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btnProductos:hover {
+    background: #333333;
+}
+
+// Galería de Productos CSS
+#linkProductosSpan {
+    position: absolute;
+    top: 750px;
+    visibility: hidden;
+}
+
+#LinkProductos {
+    overflow: hidden;
+    position: relative;
+}
+
+#linkGaleriaSpan {
+    position: absolute;
+    top: 1200px;
+    visibility: hidden;
+}
+
+#galeriaProductos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.image {
+    height: 250px;
+    width: 350px;
+    border: 10px solid #ecb8bb;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .1);
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 3%;
+}
+
+.image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+.image:hover img {
+    transform: scale(1.1);
+}
+
+.popup-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+
+.popup-image span {
+    position: absolute;
+    top: 30%;
+    right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.popup-image img {
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    transform: translate(-50% -50%);
+    border: 5px solid #fff;
+    border-radius: 5px;
+    width: 500px;
+    height: 450px;
+    object-fit: cover;
+}
+
+@media (max-width:767px) {
+    .popup-image img {
+        width: 95%;
+    }
+    .btnProductos {
+        margin-bottom: 50px;
+    }
+    #linkProductosSpan {
+        position: absolute;
+        top: 200px;
+        visibility: hidden;
+    }
+    #LinkProductos {
+        overflow: hidden;
+        position: relative;
+    }
+    #LinkGaleria {
+        overflow: hidden;
+        position: relative;
+    }
+    #linkGaleriaSpan {
+        position: absolute;
+        top: 2000px;
+        visibility: hidden;
+    }
+    .text-uppercase {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        font-family: SUNN-line-regular;
+        font-size: 40px;
+        color: black;
+        font-weight: bold;
+    }
+    .productsPhotoStyle {
+        height: 200px;
+        width: 200px;
+    }
+    .popup-image img {
+        position: absolute;
+        top: 45%;
+        left: 5%;
+        transform: translate(-50% -50%);
+        border: 5px solid #fff;
+        border-radius: 5px;
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+    }
+}
+
+// Tablet View iPad horizontal
+@media only screen and (min-width: 800px) and (max-width:1080px) {
+    #linkGaleriaSpan {
+        position: absolute;
+        top: 900px;
+        visibility: hidden;
+    }
+    #linkProductosSpan {
+        position: absolute;
+        top: 300px;
+        visibility: hidden;
+    }
+    .popup-image img {
+        position: absolute;
+        top: 35%;
+        left: 25%;
+        transform: translate(-50% -50%);
+        border: 5px solid #fff;
+        border-radius: 5px;
+        width: 500px;
+        height: 450px;
+        object-fit: cover;
+    }
+}
+
+// Vista ipad vertical
+@media only screen and (min-width: 768px) and (max-width:799px) {
+    #linkGaleriaSpan {
+        position: absolute;
+        top: 700px;
+        visibility: hidden;
+    }
+    #linkProductosSpan {
+        position: absolute;
+        top: 300px;
+        visibility: hidden;
+    }
+    .popup-image img {
+        position: absolute;
+        top: 25%;
+        left: 20%;
+        transform: translate(-50% -50%);
+        border: 5px solid #fff;
+        border-radius: 5px;
+        width: 500px;
+        height: 450px;
+        object-fit: cover;
+    }
+    .popup-image span {
+        position: absolute;
+        top: 25%;
+        right: 10px;
+        font-size: 60px;
+        font-weight: bolder;
+        color: #fff;
+        cursor: pointer;
+        z-index: 100;
+    }
+}

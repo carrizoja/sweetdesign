@@ -1,0 +1,74 @@
+@font-face {
+    font-family: SUNN-line-regular;
+    src: url('../assets/fonts/menu/SUNN-Line-Regular.woff');
+}
+
+@font-face {
+    font-family: Brush-regular;
+    src: url('../assets/fonts/footer/CrushineBrushScript.woff');
+}
+
+// Link a Quiénes Somos
+#linkSomosSpan {
+    position: absolute;
+    top: 1350px;
+    visibility: hidden;
+}
+
+#LinkSomos {
+    overflow: hidden;
+    position: relative;
+}
+
+.quienesSomos {
+    width: 550px;
+    height: 442px;
+    margin-bottom: 2%;
+    margin-top: 4%;
+}
+
+.quienesSomosDescription {
+    font-size: xx-large;
+    font-family: SUNN-line-regular;
+    font-weight: bold;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+#divQuienesSomos {
+    background: #57B5A9;
+    background: -webkit-linear-gradient(left, #57B5A9, #b9f6ee);
+    background: -webkit-linear-gradient(left, #57B5A9, #b9f6ee);
+    background: -o-linear-gradient(left, #57B5A9, #b9f6ee);
+    background: -moz-linear-gradient(left, #57B5A9, #b9f6ee);
+    background: linear-gradient(left, #57B5A9, #b9f6ee);
+}
+
+// Vista mobile
+@media (max-width:767px) {
+    .quienesSomos {
+        width: 282px;
+        height: 242px;
+        margin-bottom: 2%;
+        margin-top: 4%;
+    }
+    #linkSomosSpan {
+        position: absolute;
+        top: 2400px;
+        visibility: hidden;
+    }
+}
+
+// Tablet View iPad horizontal
+@media only screen and (min-width: 800px) and (max-width:1080px) {
+    #linkSomosSpan {
+        position: absolute;
+        top: 1050px;
+        visibility: hidden;
+    }
+}
+
+// Vista ipad vertical
+@media only screen and (min-width: 768px) and (max-width:799px) {}

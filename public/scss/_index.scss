@@ -1,0 +1,84 @@
+// css para index
+@font-face {
+    font-family: SUNN-line-regular;
+    src: url('../assets/fonts/menu/SUNN-Line-Regular.woff');
+}
+
+@font-face {
+    font-family: Brush-regular;
+    src: url('../assets/fonts/footer/CrushineBrushScript.woff');
+}
+
+.carousel {
+    padding-top: 5%;
+}
+
+.carousel-item {
+    height: 45rem;
+    background-size: cover;
+    background-position: center center;
+}
+
+.carousel-inner {
+    margin-top: 5%;
+}
+
+// Container
+.container,
+.container-fluid,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+    width: 100%;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.sonic {
+    background-image: url(../assets/img/sonic.png);
+}
+
+.ponies {
+    background-image: url(../assets/img/ponies.jpg);
+}
+
+.minions {
+    background-image: url(../assets/img/minions.jpg);
+}
+
+.cookies {
+    background-image: url(../assets/img/cookies.jpg);
+}
+
+.cupcakes {
+    background-image: url(../assets/img/cupcakes.jpg);
+}
+
+.cookiesNavidad {
+    background-image: url(../assets/img/cookiesNavidad.jpg);
+}
+
+.productsPhotoStyle {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+
+// Mobile View
+@media only screen and (max-width: 767px) {
+    .carousel-item {
+        height: 200px;
+        margin-top: 160px;
+    }
+}
+
+// Tablet View iPad 
+@media only screen and (min-width: 768px) and (max-width:1080px) {
+    .carousel-item {
+        height: 350px;
+        margin-top: 120px;
+    }
+}
